@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Updated CSS path -->
+</head>
+<body>
+    <div class="todo-container">
+        <h1>To-Do List</h1>
+        
+        <!-- Task Input Section -->
+        <input type="text" id="task-name-input" placeholder="Enter task name" />
+        <textarea id="task-desc-input" placeholder="Enter task description"></textarea>
+
+        <!-- Status Dropdown -->
+        <select id="task-status-input">
+            <option value="Todo">Todo</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+            <option value="Cancelled">Cancelled</option>
+        </select>
+
+        <!-- Complete By Date/Time Picker -->
+        <input type="datetime-local" id="task-complete-by-input" />
+
+        <button id="add-task-btn">Add Task</button>
+
+        <!-- Task List -->
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="js/app.js"></script> <!-- Updated JS path -->
+</body>
+</html>
